@@ -78,7 +78,7 @@ app.get('/port/find', function (req, res) {
 
 // INDEX
 
-app.get('/index', function (req, res) {
+app.get('/', function (req, res) {
     
           
       res.redirect("http://myy.haaga-helia.fi/~a1504523/WebShopKomys_/index.html", 'utf8', function (err, data) {
