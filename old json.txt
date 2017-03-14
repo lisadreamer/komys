@@ -1,0 +1,52 @@
+[
+    {
+    "id": "1",
+    "name": "silver earring 01",
+    "img": "http://myy.haaga-helia.fi/~a1504523/WebShopKomys/images/earrings1.jpg",
+    "type": "earring",
+    "material": "silver",
+    "weight":  "9.39",
+    "description": "-",
+    "price": "49"
+    },
+    {
+    "id": "2",
+    "name": "silver earring 02",
+    "img": "http://myy.haaga-helia.fi/~a1504523/WebShopKomys/images/earrings2.jpg",
+    "type": "earring",
+    "material": "silver",
+    "weight":  "7.83",
+    "description": "zirconia stones",
+    "price": "59"
+    },
+    {
+    "id": "3",
+    "name": "silver ring 01",
+    "img": "http://myy.haaga-helia.fi/~a1504523/WebShopKomys/images/earrings3.jpg",
+    "type": "ring",
+    "material": "silver",
+    "weight":  "3.01",
+    "description": "blue zirconia stone",
+    "price": "25"
+    },
+    {
+    "id": "4",
+    "name": "silver pendant 01",
+    "img": "http://myy.haaga-helia.fi/~a1504523/WebShopKomys/images/earrings4.jpg",
+    "type": "pendant",
+    "material": "silver",
+    "weight":  "5.46",
+    "description": "charm",
+    "price": "29"
+    },
+    {
+    "id": "5",
+    "name": "silver bracelet 01",
+    "img": "http://myy.haaga-helia.fi/~a1504523/WebShopKomys/images/earrings5.jpg",
+    "type": "bracelet",
+    "material": "silver",
+    "weight":  "8.31",
+    "description": "-",
+    "price": "49"
+    }
+]

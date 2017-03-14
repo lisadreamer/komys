@@ -1,0 +1,23 @@
+{
+  "name": "komys",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "dependencies": {
+    "express": "^4.15.2"
+  },
+  "engines": {
+    "node": "6.10.0"
+  },
+  "author": "",
+  "license": "ISC"
+}

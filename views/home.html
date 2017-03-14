@@ -1,0 +1,69 @@
+<!-- views/home.html -->
+<div class="products playfair">
+    
+    <div class="container-fluid">
+        <div class="row">            
+            
+            <div>
+                <div class="center nomargin">
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 jtype">
+                    <input type="text" ng-model="searchName" class="height27" placeholder="Search">                    
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 jtype">
+                    Sort by:
+                    <select ng-model= "pricereverse">    
+                        <option value="price">Price: Low to high</option>
+                        <option value="-price">Price: High to low</option>
+                        <option value="weight">Weight: Low to high</option>
+                    </select>
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 jtype">
+                    Select a type:
+                    <select ng-model="selectedType">
+                    <option value="">--All--</option>
+                    <option  ng-repeat="product in products | unique:'type'">{{product.type}}</option>
+                    </select>    
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 jtype">
+                    Select a material:
+                    <select ng-model="selectedMaterial">
+                    <option value="">--All--</option>
+                    <option  ng-repeat="product in products | unique:'material'">{{product.material}}</option>
+                    </select>
+                    </div>
+                    
+                </div>
+            </div>
+             
+            <div class="item col-lg-9 col-md-8 col-sm-6 col-xs-12 topmargin"> 
+                <div class="item col-lg-4 col-md-6 col-sm-12 col-xs-12 topmargin" id="productlist1"
+                     ng-repeat="product in products | filter: 
+                                {type:selectedType || undefined, material:selectedMaterial || undefined}:true | filter: {name:searchName} | orderBy : pricereverse"
+                     ng-click="toggleActive(product)" ng-class="{active:product.active}">
+                    
+                    <img class="img-responsive earringsimg" ng-src="{{ product.img }}">
+                    <a href="#/products/{{product.id-1}}">
+                        <p>{{ product.name }} <span>- {{ product.price }}€</span></p>
+                    </a>
+
+
+                </div>
+            </div>
+            
+            
+                
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 topmargin60 border">
+                <p class="bottommargin"><b >Total: <span>{{total()}}€</span></b></p>
+                    <div id="productlist2" 
+                 ng-repeat="product in products | filter: {active:true}">
+                    <a ng-click="del(product)">x</a>
+                    <span>{{'  '+ product.name +' , '+ product.price}}€</span>
+                </div>
+            </div>
+            
+            
+        </div>
+        
+    </div>
+</div>

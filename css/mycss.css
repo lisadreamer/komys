@@ -1,0 +1,133 @@
+.playfair{
+	font-family: 'Playfair Display', serif ;
+	font-size: 1.25em ;
+}
+.fullwidth{
+	width:100%;
+}
+.halfwidth{
+	width:50%;
+}
+.width100{
+	width:200px !important;
+}
+.widthshipping{
+    width:100px;    
+}
+.nomargin {
+	margin-bottom: 0px !important;
+}
+.topmargin{
+    margin-top: 30px;    
+}
+.topmargin100{
+    margin-top: 100px;    
+}
+.topmargin60{
+    margin-top: 60px;    
+}
+.bottommargin{
+    margin-bottom: 30px;    
+}
+.topmargin200{
+    margin-top: 200px;    
+}
+.toppadding{
+	padding-top: 30px;
+}
+.center{
+    text-align: center;
+    vertical-align: center;
+}
+.floatleft{
+    float:left !important;
+}
+.earringsimg:hover {	
+	opacity: 0.5;
+}
+.products img{
+	width:250px;
+    height:250px;
+}
+
+.xs {
+	width:10px !important;
+}
+.xxs a{
+	color: gray;
+	
+}
+.header-text {
+    font-family: 'Oswald', sans-serif;
+    position: absolute;
+    top: 30vh;
+    width: 96vw;
+    font-size: 5vw;
+    color: #fff;
+    z-index: 2;
+    letter-spacing: 1em;
+    word-spacing: 0.1em !important;
+    line-height: 80%;
+    opacity: 0;
+    padding-left: 10vw;
+}
+
+input:invalid {
+    background-color: pink;
+    
+}
+
+/*contacts-------*/
+.contacts img{
+	width:20px;
+}
+/*--------contacts end*/
+
+/*footer-----------*/
+footer{	
+	text-align: center ;
+	float: none ; 
+	font-family: 'Playfair Display', serif ;
+	font-size: 1.25em ;	
+}
+
+.footer_social { 
+	padding: 10px 0px 10px; 
+	text-align: center; 	
+}
+
+.footer_social img { float: none; margin: 0 6px; }
+
+footer a{
+	color:#000 ; 	
+	font-weight: normal !important;
+}
+
+div a .mailto{
+	margin-bottom: : 20px !important; 
+	
+}
+/*---------footer*/
+
+/*fed*/
+.jtype{
+    background-color: #E7E7E7 !important;    
+}
+.border{
+    border: solid 2px #E7E7E7;
+}
+.products img {	
+	margin-top: 10px;	
+}
+
+div.active{
+	background-color:#ccffee;
+}
+.height27{
+    height:27px !important;
+}
+.widthsort{
+    width:178px ;
+    float:left;
+}
+/*fed*/
